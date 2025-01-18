@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="Cây thuốc Việt Nam"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.ListPost_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PostDetail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UserProfile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HerbDetail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DashBoard_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Signup_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Start_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FavoritePost_Activity"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.FavoriteHerb_Activity"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.Intro_Activity"
+            android:exported="true"
+            android:label="Cây thuốc Việt Nam"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

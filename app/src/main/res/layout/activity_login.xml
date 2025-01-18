@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context=".Activity.Login_Activity">
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="528dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/logo_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:textAlignment="center"
+            android:textColor="@color/Heading02"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_TenDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_green"
+            android:hint="Tên đăng nhập"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_MatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_green"
+            android:hint="Mật khẩu"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_DangNhap"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/blue_button"
+            android:text="Đăng nhập"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

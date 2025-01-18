@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "941270357760",
+    "firebase_url": "https://ungdungdatthucan-default-rtdb.firebaseio.com",
+    "project_id": "ungdungdatthucan",
+    "storage_bucket": "ungdungdatthucan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941270357760:android:3fe4586faba357d83205e5",
+        "android_client_info": {
+          "package_name": "com.example.doanchuyennghanh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS4lTpkYrl-JbkLpbFPC-qq2KQyJDUiC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941270357760:android:532b7d4b7c35f9023205e5",
+        "android_client_info": {
+          "package_name": "com.example.ungdungdatthucan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS4lTpkYrl-JbkLpbFPC-qq2KQyJDUiC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

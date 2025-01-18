@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2EFE3"
+    tools:context=".Activity.HomeActivity">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp">
+
+        <!-- Title in Toolbar -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Cây thuốc Đông Y Việt Nam"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Filler -->
+        <ImageView
+            android:id="@+id/ic_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_filter"
+            android:layout_gravity="end"
+            android:padding="10dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Container to load fragments -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Content that scrolls -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="8dp">
+
+            <!-- Search Bar and Item Count -->
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Tìm kiếm"
+                android:background="@drawable/search_background"
+                android:drawableLeft="@drawable/ic_search"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Item Count -->
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang tải..."
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <!-- RecyclerView for herbs list -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="-10dp"
+                android:paddingEnd="-10dp"
+                android:paddingBottom="70dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

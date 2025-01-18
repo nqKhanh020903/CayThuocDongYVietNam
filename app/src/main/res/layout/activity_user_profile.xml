@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UserProfile_Activity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-60dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-60dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-60dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:background="@drawable/top_background_user_profile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/default_image_user"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp"
+                        app:civ_circle_background_color="#FFFFFF"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="User"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imgUser"
+                        app:layout_constraintStart_toStartOf="@+id/imgUser"
+                        app:layout_constraintTop_toBottomOf="@+id/imgUser" />
+
+                    <TextView
+                        android:id="@+id/txtRole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Người dùng"
+                        android:textColor="#DDDDDD"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imgUser"
+                        app:layout_constraintHorizontal_bias="0.513"
+                        app:layout_constraintStart_toStartOf="@+id/imgUser"
+                        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/white_background_user_profile"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtRole"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="24dp"
+                            tools:layout_editor_absoluteY="229dp">
+
+                            <LinearLayout
+                                android:id="@+id/btnBaiThuoc"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.3333"
+                                android:background="@drawable/grey_background"
+                                android:clickable="true"
+                                android:elevation="5dp"
+                                android:focusable="true"
+                                android:orientation="vertical"
+                                tools:layout_editor_absoluteX="34dp"
+                                tools:layout_editor_absoluteY="239dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="12dp"
+                                    android:background="@drawable/blue_button"
+                                    tools:layout_editor_absoluteX="54dp"
+                                    tools:layout_editor_absoluteY="251dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageBaiThuoc"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.499"
+                                        app:srcCompat="@drawable/home" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <TextView
+                                    android:id="@+id/txtHome"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Trang chủ"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="34dp"
+                                    tools:layout_editor_absoluteY="324dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnPostFavorites"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.3333"
+                                android:background="@drawable/grey_background"
+                                android:clickable="true"
+                                android:elevation="5dp"
+                                android:focusable="true"
+                                android:orientation="vertical"
+                                tools:layout_editor_absoluteX="155dp"
+                                tools:layout_editor_absoluteY="239dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="12dp"
+                                    android:background="@drawable/blue_button"
+                                    tools:layout_editor_absoluteX="176dp"
+                                    tools:layout_editor_absoluteY="251dp">
+
+                                    <ImageView
+                                        android:id="@+id/imagePostFavorite"
+                                        android:layout_width="40dp"
+                                        android:layout_height="340dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.501"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.499"
+                                        app:srcCompat="@drawable/ic_list_favorites" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <TextView
+                                    android:id="@+id/txtPostFavorites"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bài thuốc
+                                    Yêu thích"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="155dp"
+                                    tools:layout_editor_absoluteY="324dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnHerbFavorites"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.3333"
+                                android:background="@drawable/grey_background"
+                                android:clickable="true"
+                                android:elevation="5dp"
+                                android:focusable="true"
+                                android:orientation="vertical"
+                                tools:layout_editor_absoluteX="276dp"
+                                tools:layout_editor_absoluteY="239dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="12dp"
+                                    android:background="@drawable/blue_button"
+                                    tools:layout_editor_absoluteX="297dp"
+                                    tools:layout_editor_absoluteY="251dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageHerbFavorites"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.499"
+                                        app:srcCompat="@drawable/plant" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <TextView
+                                    android:id="@+id/txtHerbFavorites"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cây thuốc
+                                    Yêu thích"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="276dp"
+                                    tools:layout_editor_absoluteY="324dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="383dp">
+
+                            <TextView
+                                android:id="@+id/lblFullName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:text="Full Name"
+                                android:textColor="#182693"
+                                android:textSize="18sp"
+                                tools:layout_editor_absoluteX="34dp"
+                                tools:layout_editor_absoluteY="394dp" />
+
+                            <EditText
+                                android:id="@+id/txtFullName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:inputType="textCapWords"
+                                android:minHeight="48dp"
+                                android:text="None"
+                                android:textAlignment="viewEnd"
+                                android:textColor="#5B5B5B"
+                                android:textSize="16sp"
+                                tools:layout_editor_absoluteX="227dp"
+                                tools:layout_editor_absoluteY="383dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#D9D9D9"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="447dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="464dp">
+
+                            <TextView
+                                android:id="@+id/lblPassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:text="Password"
+                                android:textColor="#182693"
+                                android:textSize="18sp"
+                                tools:layout_editor_absoluteX="34dp"
+                                tools:layout_editor_absoluteY="475dp" />
+
+                            <EditText
+                                android:id="@+id/txtPassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:inputType="textPassword"
+                                android:minHeight="48dp"
+                                android:text="********"
+                                android:textAlignment="viewEnd"
+                                android:textColor="#5B5B5B"
+                                android:textSize="16sp"
+                                tools:layout_editor_absoluteX="224dp"
+                                tools:layout_editor_absoluteY="464dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#D9D9D9"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="528dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="545dp">
+
+                            <TextView
+                                android:id="@+id/lblEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:text="Email"
+                                android:textColor="#182693"
+                                android:textSize="18sp"
+                                tools:layout_editor_absoluteX="34dp"
+                                tools:layout_editor_absoluteY="556dp" />
+
+                            <EditText
+                                android:id="@+id/txtEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:inputType="textEmailAddress"
+                                android:maxWidth="20dp"
+                                android:minHeight="48dp"
+                                android:singleLine="false"
+                                android:text="example@gmail.com"
+                                android:textAlignment="viewEnd"
+                                android:textColor="#5B5B5B"
+                                android:textSize="16sp"
+                                tools:layout_editor_absoluteX="218dp"
+                                tools:layout_editor_absoluteY="545dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#D9D9D9"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="609dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="626dp">
+
+                            <TextView
+                                android:id="@+id/lblSDT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:minHeight="48dp"
+                                android:text="SDT"
+                                android:textColor="#182693"
+                                android:textSize="18sp"
+                                tools:layout_editor_absoluteX="34dp"
+                                tools:layout_editor_absoluteY="638dp" />
+
+                            <EditText
+                                android:id="@+id/txtSDT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:inputType="phone"
+                                android:maxWidth="20dp"
+                                android:minHeight="48dp"
+                                android:singleLine="false"
+                                android:text="0xxxxxxx"
+                                android:textAlignment="viewEnd"
+                                android:textColor="#5B5B5B"
+                                android:textSize="16sp"
+                                tools:layout_editor_absoluteX="212dp"
+                                tools:layout_editor_absoluteY="626dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:layout_marginTop="176dp"
+                    android:background="@drawable/background_button"
+                    android:text="Chỉnh sửa"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+                    tools:layout_editor_absoluteX="24dp" />
+
+                <Button
+                    android:id="@+id/btnLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/background_button"
+                    android:text="Đăng Xuất"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/btnEdit"
+                    tools:layout_editor_absoluteX="24dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
